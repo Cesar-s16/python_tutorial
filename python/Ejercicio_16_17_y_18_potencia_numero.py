@@ -10,10 +10,7 @@ elif num == 0 and potencia != 0:
 elif num != 0 and potencia == 0:
     print(f"{num} elevado a la {potencia}, es igual a: 1")
 else:
-    #num = num**potencia
-    i=1
-    resultado = num
-    while i<potencia:
+    resultado = 1
+    for i in range(potencia):
         resultado = resultado * num
-        i += 1
     print(f"{num} elevado a la {potencia}, es igual a: {resultado}")
